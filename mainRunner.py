@@ -1,4 +1,4 @@
-# coding:utf-8
+# coding:utf8
 
 if __name__ == "__main__":
     print("主框架入口")
