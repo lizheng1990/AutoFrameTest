@@ -2,9 +2,6 @@
 
 from inter.httpkeyword import HTTP
 
-from inter.httpkeyword import HTTP
-
-
 def changeparam(str):
     list = str
 
