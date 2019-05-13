@@ -1,6 +1,7 @@
 # coding:utf8
 
 import requests,json
+from common.Excel import *
 
 class HTTP():
     def __init__(self):

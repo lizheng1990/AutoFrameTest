@@ -2,23 +2,7 @@
 
 from inter.httpkeyword import HTTP
 
-def changeparam(str):
-    list = str
-
 if __name__ == "__main__":
-    # url="http://112.74.191.10:8081/inter/HTTP"
-    # path="login"
-    # print(url + "/" + path)
-
-    # a = None
-    # list = a.split("&")
-    # print(list)
-    # ma = {}
-    # for m in list:
-    #     k = m.split("=")[0]
-    #     y = m.split("=")[1]
-    #     ma[k] = y
-    # print(ma)
     http = HTTP()
     http.seturl("http://112.74.191.10:8081/inter/HTTP")
 
