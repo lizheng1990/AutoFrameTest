@@ -36,7 +36,7 @@ def runCases(line):
         elif len(p) == 3:
             func(line[4],line[5],line[6])
         else:
-            print("waring:z只支持三个参数！")
+            print("waring:只支持三个参数！")
 
 
 if __name__ == "__main__":
