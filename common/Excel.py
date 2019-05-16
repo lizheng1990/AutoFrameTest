@@ -43,7 +43,7 @@ class Reader:
     def get_sheets(self):
         # 获取所有sheet的名字，并返回为一个列表
         sheets = self.workbook.sheet_names()
-        print(sheets)
+        # print(sheets)
         return sheets
 
     # 切换sheet页面
@@ -121,7 +121,7 @@ class Writer:
     def get_sheets(self):
         # 获取所有sheet的名字，并返回为一个列表
         sheets = self.workbook.sheet_names()
-        print(sheets)
+        # print(sheets)
         return sheets
 
     # 切换sheet页面

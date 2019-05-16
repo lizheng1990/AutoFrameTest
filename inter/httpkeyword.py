@@ -72,7 +72,7 @@ class HTTP():
         self.jsonparams[value] = self.jsonre[key]
 
 # 获取保存的参数值
-    def __get_value(self,p):
+    def __get_value(self,p=None):
         if p is None:
             return p
         else:
