@@ -44,6 +44,9 @@ class Mysql:
                 # 如果是插入语句，也删除末尾的换行
                 elif line.startswith('INSERT'):
                     sql_list.append(line.replace('\n', ''))
+                # 如果是查询语句，也删除末尾的换行
+                elif line.startswith('SELECT'):
+                    sql_list.append(line.replace('\n', ''))
                 # 如果是其他语句，就忽略
                 else:
                     pass
@@ -68,6 +71,10 @@ class Mysql:
         # 一行一行执行SQL语句
         for sql in self.__read_sql_file(path):
             cursor.execute(sql)
+            logger.info(sql)
+            # desc = cursor.description  # 获取字段的描述，默认获取数据库字段名称，重新定义时通过AS关键重新命名即可
+            # data_dict = [dict(zip([col[0] for col in desc], row)) for row in cursor.fetchall()]
+            # print(data_dict)
             connect.commit()
         # 关闭游标和连接
         cursor.close()
@@ -76,7 +83,8 @@ class Mysql:
 
 # 调试代码
 if __name__ == '__main__':
-    config.get_config('../lib/conf/conf.txt')
+    config.get_config('../lib/conf/conf.properties')
     # logger.info(config.config)
+
     mysql = Mysql()
-    mysql.init_mysql('C:\\Users\\Will\\Desktop\\userinfo.sql')
+    mysql.init_mysql('C:\\Users\\leez\\Documents\\Navicat\\MySQL\\servers\\112\\test_project\\userinfo.sql')

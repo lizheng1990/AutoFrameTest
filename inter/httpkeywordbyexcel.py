@@ -1,7 +1,8 @@
 # coding:utf8
 
 import requests,json
-from common.Excel import Writer
+
+from common.logger import logger
 
 
 class HTTP():
@@ -27,9 +28,11 @@ class HTTP():
             self.url = url
             self.writer.write(self.writer.row,self.writer.clo,"PASS")
             self.writer.write(self.writer.row,self.writer.clo+1,str(self.url))
+            logger.info(self.url)
         except  Exception as e:
             self.writer.write(self.writer.row,self.writer.clo,"FAIL")
             self.writer.write(self.writer.row,self.writer.clo+1,e)
+            logger.exception(e)
 
 # 清除header中的参数
     def removeheader(self,key):
@@ -37,9 +40,11 @@ class HTTP():
             self.session.headers.pop(key)
             self.writer.write(self.writer.row,self.writer.clo,"PASS")
             self.writer.write(self.writer.row,self.writer.clo+1,str(self.session.headers))
+            logger.info(str(self.session.headers))
         except Exception as e:
             self.writer.write(self.writer.row,self.writer.clo,"FAIL")
             self.writer.write(self.writer.row,self.writer.clo+1,e)
+            logger.exception(e)
 
 # 增加header中的参数
     def addheader(self,key,p=None):
@@ -48,9 +53,11 @@ class HTTP():
             self.session.headers[key] = value
             self.writer.write(self.writer.row,self.writer.clo,"PASS")
             self.writer.write(self.writer.row,self.writer.clo+1,str(self.session.headers))
+            logger.info(str(self.session.headers))
         except Exception as e:
             self.writer.write(self.writer.row,self.writer.clo,"FAIL")
             self.writer.write(self.writer.row,self.writer.clo+1,e)
+            logger.exception(e)
 
 # post封装
     def post(self,path,p=None):
@@ -59,9 +66,11 @@ class HTTP():
             self.jsonre = json.loads(self.result.text)
             self.writer.write(self.writer.row,self.writer.clo,"PASS")
             self.writer.write(self.writer.row,self.writer.clo+1,str(self.jsonre))
+            logger.info(str(str(self.jsonre)))
         except Exception as e:
             self.writer.write(self.writer.row,self.writer.clo,"FAIL")
             self.writer.write(self.writer.row,self.writer.clo+1,e)
+            logger.exception(e)
 
     # get封装
     def get(self,path,p=None):
@@ -71,9 +80,11 @@ class HTTP():
             self.jsonre = json.loads(self.result.text)
             self.writer.write(self.writer.row,self.writer.clo,"PASS")
             self.writer.write(self.writer.row,self.writer.clo+1,str(self.jsonre))
+            logger.info(str(str(self.jsonre)))
         except Exception as e:
             self.writer.write(self.writer.row,self.writer.clo,"FAIL")
             self.writer.write(self.writer.row,self.writer.clo+1,e)
+            logger.exception(e)
 
     def __to_json(self,re):
         return re[re.find("(")+1:re.find(")")]
@@ -95,16 +106,19 @@ class HTTP():
     def assertequals(self,key,value):
         try:
             if str(self.jsonre[key]) == value:
-                print("PASS")
+                # print("PASS")
                 self.writer.write(self.writer.row,self.writer.clo,"PASS")
                 self.writer.write(self.writer.row,self.writer.clo+1,str(self.jsonre[key]))
+                logger.info(str(str(self.jsonre)))
             else:
-                print("FAIL")
+                # print("FAIL")
                 self.writer.write(self.writer.row,self.writer.clo,"FAIL")
                 self.writer.write(self.writer.row,self.writer.clo+1,str(self.jsonre[key]))
+                logger.error(str(str(self.jsonre)))
         except Exception as e:
             self.writer.write(self.writer.row,self.writer.clo,"FAIL")
             self.writer.write(self.writer.row,self.writer.clo+1,e)
+            logger.exception(e)
 
 # 保存值到jsonparams中
     def savejson(self,key,value):
@@ -115,6 +129,7 @@ class HTTP():
         except Exception as e:
             self.writer.write(self.writer.row,self.writer.clo,"FAIL")
             self.writer.write(self.writer.row,self.writer.clo+1,e)
+            logger.exception(e)
 
 # 获取保存的参数值
     def __get_value(self,p=None):

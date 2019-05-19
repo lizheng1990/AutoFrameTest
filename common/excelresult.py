@@ -2,6 +2,7 @@
 
 from common.Excel import Reader
 from common import logger
+from common import config
 
 
 class Res:
@@ -96,5 +97,5 @@ class Res:
 
 if __name__ == '__main__':
     res = Res()
-    r = res.get_res('../lib/results/result-HTTP接口用例.xls')
+    r = res.get_res('../lib/results/result-HTTP接口用例20190517214627.xls')
     print(r)
