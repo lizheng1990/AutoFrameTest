@@ -47,6 +47,12 @@ class Mysql:
                 # 如果是查询语句，也删除末尾的换行
                 elif line.startswith('SELECT'):
                     sql_list.append(line.replace('\n', ''))
+                # 如果是删除数据语句，也删除末尾的换行
+                elif line.startswith('DELETE'):
+                    sql_list.append(line.replace('\n', ''))
+                # 如果是更新语句，也删除末尾的换行
+                elif line.startswith('UPDATE'):
+                    sql_list.append(line.replace('\n', ''))
                 # 如果是其他语句，就忽略
                 else:
                     pass
@@ -76,6 +82,11 @@ class Mysql:
             # data_dict = [dict(zip([col[0] for col in desc], row)) for row in cursor.fetchall()]
             # print(data_dict)
             connect.commit()
+        # cursor.execute("SELECT username from userinfo where username='lizheng4334';")
+        # desc = cursor.description  # 获取字段的描述，默认获取数据库字段名称，重新定义时通过AS关键重新命名即可
+        # data_dict = [dict(zip([col[0] for col in desc], row)) for row in cursor.fetchall()]
+        # print(data_dict[0]['username'])
+        # connect.commit()
         # 关闭游标和连接
         cursor.close()
         connect.close()

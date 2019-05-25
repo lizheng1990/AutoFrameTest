@@ -26,7 +26,7 @@ class HTTP():
         try:
             self.session.headers.pop(key)
         except Exception as e:
-            print("header中没有" + key)
+            print(e)
 
 # 增加header中的参数
     def addheader(self,key,p=None):

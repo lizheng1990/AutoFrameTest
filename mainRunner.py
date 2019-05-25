@@ -5,13 +5,16 @@ from common.Excel import *
 from common import config
 from common.excelresult import Res
 from common.mail import Mail
+from common.mysql import Mysql
 from inter.httpkeywordbyexcel import HTTP
+from inter.soapkeywordbyexcel import SOAP
 
-def runCases(line):
+
+def runCases(line,type):
     if len(line[0]) > 0 or len(line[1]) > 0:
         pass
     else:
-        func = getattr(http, line[3])
+        func = getattr(type, line[3])
         p = inspect.getfullargspec(func).__str__()
         p = p[p.find("args=") + 5:p.find(", varargs")]
         p = eval(p)
@@ -33,15 +36,25 @@ if __name__ == "__main__":
     res = Res()
     reader = Reader()
     writer = Writer()
-    http = HTTP(writer)
+    key = 'REST'
+    if key == 'HTTP':
+        http = HTTP(writer)
+        type = http
+    if key == 'SOAP':
+        soap = SOAP(writer)
+        type = soap
+    if key == 'REST':
+        http = HTTP(writer)
+        type = http
     start_time = time.time()
     ctime = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
-    reader.open_excel('./lib/cases/HTTP接口用例.xls')
-    writer.copy_open('./lib/cases/HTTP接口用例.xls', './lib/results/result-HTTP接口用例' + ctime +'.xls')
+    case = './lib/cases/' + key + '接口用例'
+    result = './lib/results/result-' + key + '接口用例'
+    reader.open_excel(case + '.xls')
+    writer.copy_open(case + '.xls', result + ctime +'.xls')
     sheetname = reader.get_sheets()
     writer.set_sheet(sheetname[0])
     start_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-    print(start_time)
     writer.write(1,3,str(start_time))
     for sheet in sheetname:
         # 设置当前读取的sheet页面
@@ -51,17 +64,31 @@ if __name__ == "__main__":
             writer.row = i
             writer.clo = 7
             line = reader.readline()
-            runCases(line)
+            runCases(line,type)
     end_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-    print(end_time)
     writer.set_sheet(sheetname[0])
     writer.write(1,4,str(end_time))
     writer.save_close()
-    r = res.get_res('./lib/results/result-HTTP接口用例' + ctime +'.xls')
+    r = res.get_res(result + ctime +'.xls')
     print(r)
-    # config.get_config('./lib/conf/conf.properties')
-    # mail = Mail()
-    # mail.mail_info['mail_subject'] = '接口测试结果邮件' + '_' + ctime
-    # mail.mail_info['filepaths'] = ['./lib/results/result-HTTP接口用例' + ctime +'.xls']
-    # mail.mail_info['filenames'] = ['result-HTTP接口用例' + ctime +'.xls']
-    # mail.send(mail.mail_info['html'])
+    config.get_config('./lib/conf/conf.properties')
+
+    mysql = Mysql()
+    mysql.init_mysql('C:\\Users\\leez\\Documents\\Navicat\\MySQL\\servers\\112\\test_project\\userinfo.sql')
+
+    mail = Mail()
+    mail.mail_info['mail_subject'] = r['title'] + '_' + ctime
+    mail.mail_info['filepaths'] = ['./lib/results/result-HTTP接口用例' + ctime +'.xls']
+    mail.mail_info['filenames'] = ['result-HTTP接口用例' + ctime +'.xls']
+    config.config['mail_html'] = config.config['mail_html'].replace('title',r['title'])
+    if r['status'] == 'Fail':
+        config.config['mail_html'] = config.config['mail_html'].replace('color: #00d800;">status','color: #FF0000;">status')
+        config.config['mail_html'] = config.config['mail_html'].replace('status',r['status'])
+    else:
+        config.config['mail_html'] = config.config['mail_html'].replace('status',r['status'])
+    config.config['mail_html'] = config.config['mail_html'].replace('runtype',r['runtype'])
+    config.config['mail_html'] = config.config['mail_html'].replace('passrate',r['passrate'])
+    config.config['mail_html'] = config.config['mail_html'].replace('starttime',r['starttime'])
+    config.config['mail_html'] = config.config['mail_html'].replace('casecount',r['casecount'])
+    config.config['mail_html'] = config.config['mail_html'].replace('endtime',r['endtime'])
+    mail.send(config.config['mail_html'])
