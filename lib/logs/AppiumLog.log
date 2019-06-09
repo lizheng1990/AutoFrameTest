@@ -1,0 +1,779 @@
+2019-06-04 23:57:50:845 [Appium] Welcome to Appium v1.11.1
+2019-06-04 23:57:50:846 [Appium] Non-default server args:
+2019-06-04 23:57:50:847 [Appium]   address: 127.0.0.1
+2019-06-04 23:57:50:848 [Appium]   port: 7777
+2019-06-04 23:57:50:848 [Appium]   bootstrapPort: 7778
+2019-06-04 23:57:50:849 [Appium]   logFile: G:\gitHub\AutoFrameTest/lib/logs/AppiumLog.log
+2019-06-04 23:57:50:849 [Appium]   logTimestamp: true
+2019-06-04 23:57:50:849 [Appium]   localTimezone: true
+2019-06-04 23:57:50:867 [Appium] Appium REST http interface listener started on 127.0.0.1:7777
+2019-06-04 23:58:17:595 [HTTP] --> POST /wd/hub/session
+2019-06-04 23:58:17:596 [HTTP] {"capabilities":{"firstMatch":[{"appium:deviceName":"127.0.0.1:7555","platformName":"Android","appium:platformVersion":"6.0.1","appium:appPackage":"com.tencent.mobileqq","appium:appActivity":".activity.SplashActivity","appium:noReset":true,"appium:chromeOptions":{"androidProcess":"com.tencent.mobileqq:mini"}}]},"desiredCapabilities":{"deviceName":"127.0.0.1:7555","platformName":"Android","platformVersion":"6.0.1","appPackage":"com.tencent.mobileqq","appActivity":".activity.SplashActivity","noReset":true,"chromeOptions":{"androidProcess":"com.tencent.mobileqq:mini"}}}
+2019-06-04 23:58:17:599 [W3C] Calling AppiumDriver.createSession() with args: [{"deviceName":"127.0.0.1:7555","platformName":"Android","platformVersion":"6.0.1","appPackage":"com.tencent.mobileqq","appActivity":".activity.SplashActivity","noReset":true,"chromeOptions":{"androidProcess":"com.tencent.mobileqq:mini"}},null,{"firstMatch":[{"appium:deviceName":"127.0.0.1:7555","platformName":"Android","appium:platformVersion":"6.0.1","appium:appPackage":"com.tencent.mobileqq","appium:appActivity":".activity.SplashActivity","appium:noReset":true,"appium:chromeOptions":{"androidProcess":"com.tencent.mobileqq:mini"}}]}]
+2019-06-04 23:58:17:603 [BaseDriver] Event 'newSessionRequested' logged at 1559663897600 (23:58:17 GMT+0800 (中国标准时间))
+2019-06-04 23:58:17:612 [Appium] DeprecationWarning: 'automationName' capability was not provided. Future versions of Appium will require 'automationName' capability to be set for Android sessions.
+2019-06-04 23:58:17:613 [Appium] Setting automation to 'UiAutomator1'. 
+2019-06-04 23:58:17:615 [Appium] Consider setting 'automationName' capability to 'UiAutomator2' on Android >= 6, since UIAutomator1 framework is not maintained anymore by the OS vendor.
+2019-06-04 23:58:17:616 [Appium] Creating new AndroidDriver (v4.8.0) session
+2019-06-04 23:58:17:617 [Appium] Capabilities:
+2019-06-04 23:58:17:617 [Appium]   platformName: Android
+2019-06-04 23:58:17:618 [Appium]   deviceName: 127.0.0.1:7555
+2019-06-04 23:58:17:619 [Appium]   platformVersion: 6.0.1
+2019-06-04 23:58:17:620 [Appium]   appPackage: com.tencent.mobileqq
+2019-06-04 23:58:17:620 [Appium]   appActivity: .activity.SplashActivity
+2019-06-04 23:58:17:623 [Appium]   noReset: true
+2019-06-04 23:58:17:623 [Appium]   chromeOptions: {
+2019-06-04 23:58:17:624 [Appium]     androidProcess: com.tencent.mobileqq:mini
+2019-06-04 23:58:17:625 [Appium]   }
+2019-06-04 23:58:17:630 [BaseDriver] W3C capabilities {"alwaysMatch":{"platformNa... and MJSONWP desired capabilities {"deviceName":"127.0.0.1:75... were provided
+2019-06-04 23:58:17:632 [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"platformNa...
+2019-06-04 23:58:17:642 [BaseDriver] Session created with session id: 1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd
+2019-06-04 23:58:17:783 [AndroidDriver] Java version is: 1.8.0
+2019-06-04 23:58:17:786 [ADB] Checking whether adb is present
+2019-06-04 23:58:17:790 [ADB] Found 1 'build-tools' folders under 'E:\android-sdk-windows' (newest first):
+2019-06-04 23:58:17:791 [ADB]     E:/android-sdk-windows/build-tools/28.0.3
+2019-06-04 23:58:17:793 [ADB] Using adb.exe from E:\android-sdk-windows\platform-tools\adb.exe
+2019-06-04 23:58:17:794 [AndroidDriver] Retrieving device list
+2019-06-04 23:58:17:795 [ADB] Trying to find a connected android device
+2019-06-04 23:58:17:796 [ADB] Getting connected devices...
+2019-06-04 23:58:17:837 [ADB] 2 device(s) connected
+2019-06-04 23:58:17:838 [AndroidDriver] Looking for a device with Android '6.0.1'
+2019-06-04 23:58:17:839 [ADB] Setting device id to 4b251b53
+2019-06-04 23:58:17:840 [ADB] Getting device platform version
+2019-06-04 23:58:17:842 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 4b251b53 shell getprop ro.build.version.release'
+2019-06-04 23:58:17:965 [ADB] Current device property 'ro.build.version.release': 8.0.0
+2019-06-04 23:58:17:968 [ADB] Setting device id to 127.0.0.1:7555
+2019-06-04 23:58:17:973 [ADB] Getting device platform version
+2019-06-04 23:58:17:976 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.release'
+2019-06-04 23:58:18:064 [ADB] Current device property 'ro.build.version.release': 6.0.1
+2019-06-04 23:58:18:065 [AndroidDriver] Using device: 127.0.0.1:7555
+2019-06-04 23:58:18:067 [ADB] Setting device id to 127.0.0.1:7555
+2019-06-04 23:58:18:068 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.sdk'
+2019-06-04 23:58:18:124 [ADB] Current device property 'ro.build.version.sdk': 23
+2019-06-04 23:58:18:125 [ADB] Device API level: 23
+2019-06-04 23:58:18:126 [AndroidDriver] Consider setting 'automationName' capability to 'uiautomator2' on Android >= 6, since UIAutomator framework is not maintained anymore by the OS vendor.
+2019-06-04 23:58:18:127 [AndroidDriver] App file was not listed, instead we're going to run com.tencent.mobileqq directly on the device
+2019-06-04 23:58:18:128 [AndroidDriver] Checking whether package is present on the device
+2019-06-04 23:58:18:129 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm list packages com.tencent.mobileqq'
+2019-06-04 23:58:18:469 [AndroidDriver] Starting Android session
+2019-06-04 23:58:18:471 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 wait-for-device'
+2019-06-04 23:58:18:510 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell echo ping'
+2019-06-04 23:58:18:565 [AndroidDriver] Pushing settings apk to device...
+2019-06-04 23:58:18:567 [ADB] Getting install status for io.appium.settings
+2019-06-04 23:58:18:568 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys package io.appium.settings'
+2019-06-04 23:58:18:629 [ADB] 'io.appium.settings' is installed
+2019-06-04 23:58:18:630 [ADB] Getting package info for 'io.appium.settings'
+2019-06-04 23:58:18:631 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys package io.appium.settings'
+2019-06-04 23:58:18:686 [ADB] Checking whether aapt is present
+2019-06-04 23:58:18:689 [ADB] Using aapt.exe from E:\android-sdk-windows\build-tools\28.0.3\aapt.exe
+2019-06-04 23:58:18:718 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('2.14.0' >= '2.14.0')
+2019-06-04 23:58:18:719 [ADB] There is no need to install/upgrade 'E:\npm\node_modules\appium\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2019-06-04 23:58:18:720 [ADB] Getting IDs of all 'io.appium.settings' processes
+2019-06-04 23:58:18:721 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell 'pgrep --help; echo $?''
+2019-06-04 23:58:18:776 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pgrep -f \^io\\.appium\\.settings\$'
+2019-06-04 23:58:18:833 [AndroidDriver] Granting android.permission.SET_ANIMATION_SCALE, CHANGE_CONFIGURATION, ACCESS_FINE_LOCATION by pm grant
+2019-06-04 23:58:18:834 [ADB] Granting permissions ["android.permission.SET_ANIMATION_SCALE","android.permission.CHANGE_CONFIGURATION","android.permission.ACCESS_FINE_LOCATION"] to 'io.appium.settings'
+2019-06-04 23:58:18:834 [ADB] Got the following command chunks to execute: [["pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";","pm","grant","io.appium.settings","android.permission.CHANGE_CONFIGURATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";"]]
+2019-06-04 23:58:18:835 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pm grant io.appium.settings android.permission.SET_ANIMATION_SCALE \; pm grant io.appium.settings android.permission.CHANGE_CONFIGURATION \; pm grant io.appium.settings android.permission.ACCESS_FINE_LOCATION \;'
+2019-06-04 23:58:19:391 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-06-04 23:58:20:055 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell appops set io.appium.settings android\:mock_location allow'
+2019-06-04 23:58:20:524 [Logcat] Starting logcat capture
+2019-06-04 23:58:20:609 [ADB] Getting device platform version
+2019-06-04 23:58:20:610 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.build.version.release'
+2019-06-04 23:58:20:680 [ADB] Current device property 'ro.build.version.release': 6.0.1
+2019-06-04 23:58:20:681 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell wm size'
+2019-06-04 23:58:21:159 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.product.model'
+2019-06-04 23:58:21:220 [ADB] Current device property 'ro.product.model': SM-G9550
+2019-06-04 23:58:21:221 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell getprop ro.product.manufacturer'
+2019-06-04 23:58:21:289 [ADB] Current device property 'ro.product.manufacturer': samsung
+2019-06-04 23:58:21:291 [AndroidDriver] No app sent in, not parsing package/activity
+2019-06-04 23:58:21:292 [AndroidDriver] No app capability. Assuming it is already on the device
+2019-06-04 23:58:21:293 [AndroidBootstrap] Watching for bootstrap disconnect
+2019-06-04 23:58:21:294 [ADB] Forwarding system: 7778 to device: 4724
+2019-06-04 23:58:21:295 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 forward tcp\:7778 tcp\:4724'
+2019-06-04 23:58:21:334 [UiAutomator] Starting UiAutomator
+2019-06-04 23:58:21:335 [UiAutomator] Moving to state 'starting'
+2019-06-04 23:58:21:336 [UiAutomator] Parsing uiautomator jar
+2019-06-04 23:58:21:337 [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2019-06-04 23:58:21:337 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 push E\:\\npm\\node_modules\\appium\\node_modules\\appium-android-driver\\bootstrap\\bin\\AppiumBootstrap.jar /data/local/tmp/'
+2019-06-04 23:58:21:420 [ADB] Attempting to kill all uiautomator processes
+2019-06-04 23:58:21:421 [ADB] Getting IDs of all 'uiautomator' processes
+2019-06-04 23:58:21:422 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell pgrep -f \^uiautomator\$'
+2019-06-04 23:58:21:481 [ADB] No 'uiautomator' process has been found
+2019-06-04 23:58:21:482 [UiAutomator] Starting UIAutomator
+2019-06-04 23:58:21:483 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","127.0.0.1:7555","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.tencent.mobileqq","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2019-06-04 23:58:21:750 [UiAutomator] Moving to state 'online'
+2019-06-04 23:58:21:756 [AndroidBootstrap] Android bootstrap socket is now connected
+2019-06-04 23:58:21:758 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell dumpsys window'
+2019-06-04 23:58:21:768 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2019-06-04 23:58:21:810 [AndroidDriver] Screen already unlocked, doing nothing
+2019-06-04 23:58:21:812 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am start -W -n com.tencent.mobileqq/.activity.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-06-04 23:58:23:578 [Appium] New AndroidDriver session created successfully, session 1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd added to master session list
+2019-06-04 23:58:23:585 [BaseDriver] Event 'newSessionStarted' logged at 1559663903579 (23:58:23 GMT+0800 (中国标准时间))
+2019-06-04 23:58:23:588 [W3C (1c2fea28)] Cached the protocol value 'W3C' for the new session 1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd
+2019-06-04 23:58:23:590 [W3C (1c2fea28)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"127.0.0.1:7555","platformVersion":"6.0.1","appPackage":"com.tencent.mobileqq","appActivity":".activity.SplashActivity","noReset":true,"chromeOptions":{"androidProcess":"com.tencent.mobileqq:mini"}},"platformName":"Android","deviceName":"127.0.0.1:7555","platformVersion":"6.0.1","appPackage":"com.tencent.mobileqq","appActivity":".activity.SplashActivity","noReset":true,"chromeOptions":{"androidProcess":"com.tencent.mobileqq:mini"},"deviceUDID":"127.0.0.1:7555","deviceScreenSize":"1440x810","deviceModel":"SM-G9550","deviceManufacturer":"samsung"}}
+2019-06-04 23:58:23:594 [HTTP] <-- POST /wd/hub/session 200 5998 ms - 873
+2019-06-04 23:58:23:596 [HTTP] 
+2019-06-04 23:58:23:598 [HTTP] --> POST /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/timeouts
+2019-06-04 23:58:23:599 [HTTP] {"implicit":30000,"sessionId":"1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd"}
+2019-06-04 23:58:23:601 [W3C (1c2fea28)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,30000,"1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd"]
+2019-06-04 23:58:23:613 [BaseDriver] W3C timeout argument: {"implicit":30000}}
+2019-06-04 23:58:23:615 [BaseDriver] Set implicit wait to 30000ms
+2019-06-04 23:58:23:619 [W3C (1c2fea28)] Responding to client with driver.timeouts() result: null
+2019-06-04 23:58:23:621 [HTTP] <-- POST /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/timeouts 200 22 ms - 14
+2019-06-04 23:58:23:622 [HTTP] 
+2019-06-04 23:58:33:624 [HTTP] --> POST /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/touch/perform
+2019-06-04 23:58:33:626 [HTTP] {"actions":[{"action":"press","options":{"x":300,"y":350}},{"action":"wait","options":{"ms":1000}},{"action":"moveTo","options":{"x":300,"y":1200}},{"action":"release","options":{}}],"sessionId":"1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd"}
+2019-06-04 23:58:33:630 [W3C (1c2fea28)] Calling AppiumDriver.performTouch() with args: [[{"action":"press","options":{"x":300,"y":350}},{"action":"wait","options":{"ms":1000}},{"action":"moveTo","options":{"x":300,"y":1200}},{"action":"release","options":{}}],"1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd"]
+2019-06-04 23:58:33:632 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"swipe","params":{"startX":300,"startY":350,"endX":300,"endY":1200,"steps":28}}
+2019-06-04 23:58:33:637 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"swipe","params":{"startX":300,"startY":350,"endX":300,"endY":1200,"steps":28}}
+2019-06-04 23:58:33:651 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:58:33:653 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: swipe
+2019-06-04 23:58:33:734 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Display bounds: [0,0][810,1440]
+2019-06-04 23:58:33:741 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Display bounds: [0,0][810,1440]
+2019-06-04 23:58:33:750 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Swiping from [x=300.0, y=350.0] to [x=300.0, y=1200.0] with steps: 28
+2019-06-04 23:58:34:433 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:58:34:434 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-06-04 23:58:34:435 [W3C (1c2fea28)] Responding to client with driver.performTouch() result: true
+2019-06-04 23:58:34:436 [HTTP] <-- POST /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/touch/perform 200 812 ms - 14
+2019-06-04 23:58:34:437 [HTTP] 
+2019-06-04 23:58:44:493 [HTTP] --> GET /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/contexts
+2019-06-04 23:58:44:494 [HTTP] {}
+2019-06-04 23:58:44:495 [W3C (1c2fea28)] Calling AppiumDriver.getContexts() with args: ["1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd"]
+2019-06-04 23:58:44:497 [AndroidDriver] Getting a list of available webviews
+2019-06-04 23:58:44:498 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell cat /proc/net/unix'
+2019-06-04 23:58:44:562 [AndroidDriver] WEBVIEW_23215 mapped to pid 23215
+2019-06-04 23:58:44:563 [AndroidDriver] Getting process name for webview
+2019-06-04 23:58:44:564 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell ps'
+2019-06-04 23:58:44:575 [AndroidDriver] WEBVIEW_22708 mapped to pid 22708
+2019-06-04 23:58:44:576 [AndroidDriver] Getting process name for webview
+2019-06-04 23:58:44:577 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell ps'
+2019-06-04 23:58:44:635 [AndroidDriver] Parsed pid: '23215' pkg: 'com.tencent.mobileqq:mini1' from
+2019-06-04 23:58:44:638 [AndroidDriver]     USER      PID   PPID  VSIZE  RSS   WCHAN            PC  NAME
+2019-06-04 23:58:44:639 [AndroidDriver]     u0_a38    23215 256   1550516 168112    ep_poll b72caca5 S com.tencent.mobileqq:mini1
+2019-06-04 23:58:44:640 [AndroidDriver] Returning process name: 'com.tencent.mobileqq:mini1'
+2019-06-04 23:58:44:661 [AndroidDriver] Parsed pid: '22708' pkg: 'com.tencent.mobileqq:mini' from
+2019-06-04 23:58:44:666 [AndroidDriver]     USER      PID   PPID  VSIZE  RSS   WCHAN            PC  NAME
+2019-06-04 23:58:44:667 [AndroidDriver]     u0_a38    22708 256   1772704 312296          0 b66121fa R com.tencent.mobileqq:mini
+2019-06-04 23:58:44:668 [AndroidDriver] Returning process name: 'com.tencent.mobileqq:mini'
+2019-06-04 23:58:44:669 [AndroidDriver] Found webviews: ["WEBVIEW_com.tencent.mobileqq:mini1","WEBVIEW_com.tencent.mobileqq:mini"]
+2019-06-04 23:58:44:670 [AndroidDriver] Available contexts: ["NATIVE_APP","WEBVIEW_com.tencent.mobileqq:mini1","WEBVIEW_com.tencent.mobileqq:mini"]
+2019-06-04 23:58:44:671 [W3C (1c2fea28)] Responding to client with driver.getContexts() result: ["NATIVE_APP","WEBVIEW_com.tencent.mobileqq:mini1","WEBVIEW_com.tencent.mobileqq:mini"]
+2019-06-04 23:58:44:673 [HTTP] <-- GET /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/contexts 200 183 ms - 97
+2019-06-04 23:58:44:675 [HTTP] 
+2019-06-04 23:58:44:677 [HTTP] --> POST /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/element
+2019-06-04 23:58:44:679 [HTTP] {"using":"xpath","value":"//android.view.View[@content-desc='原创']","sessionId":"1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd"}
+2019-06-04 23:58:44:680 [W3C (1c2fea28)] Calling AppiumDriver.findElement() with args: ["xpath","//android.view.View[@content-desc='原创']","1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd"]
+2019-06-04 23:58:44:682 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-06-04 23:58:44:683 [BaseDriver] Waiting up to 30000 ms for condition
+2019-06-04 23:58:44:685 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.view.View[@content-desc='原创']","context":"","multiple":false}}
+2019-06-04 23:58:44:690 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.view.View[@content-desc='原创']","context":"","multiple":false}}
+2019-06-04 23:58:44:691 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:58:44:695 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:58:44:701 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//android.view.View[@content-desc='原创']' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:58:44:815 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.view.View, INSTANCE=5]
+2019-06-04 23:58:44:847 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+2019-06-04 23:58:44:849 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:58:44:851 [W3C (1c2fea28)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"1","ELEMENT":"1"}
+2019-06-04 23:58:44:854 [HTTP] <-- POST /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/element 200 175 ms - 67
+2019-06-04 23:58:44:855 [HTTP] 
+2019-06-04 23:58:44:857 [HTTP] --> POST /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/element/1/click
+2019-06-04 23:58:44:860 [HTTP] {"id":"1","sessionId":"1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd"}
+2019-06-04 23:58:44:861 [W3C (1c2fea28)] Calling AppiumDriver.click() with args: ["1","1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd"]
+2019-06-04 23:58:44:862 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+2019-06-04 23:58:44:881 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+2019-06-04 23:58:44:882 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:58:44:884 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2019-06-04 23:58:48:013 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2019-06-04 23:58:48:014 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:58:48:016 [W3C (1c2fea28)] Responding to client with driver.click() result: true
+2019-06-04 23:58:48:023 [HTTP] <-- POST /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/element/1/click 200 3161 ms - 14
+2019-06-04 23:58:48:024 [HTTP] 
+2019-06-04 23:58:58:022 [HTTP] --> POST /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/element
+2019-06-04 23:58:58:023 [HTTP] {"using":"xpath","value":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","sessionId":"1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd"}
+2019-06-04 23:58:58:024 [W3C (1c2fea28)] Calling AppiumDriver.findElement() with args: ["xpath","/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd"]
+2019-06-04 23:58:58:025 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-06-04 23:58:58:026 [BaseDriver] Waiting up to 30000 ms for condition
+2019-06-04 23:58:58:027 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:58:58:030 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:58:58:031 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:58:58:033 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:58:58:034 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:58:58:062 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:58:58:066 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:58:58:133 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:58:58:134 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:58:58:174 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:58:58:179 [BaseDriver] Waited for 148 ms so far
+2019-06-04 23:58:58:680 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:58:58:684 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:58:58:685 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:58:58:686 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:58:58:687 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:58:58:713 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:58:58:715 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:58:58:747 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:58:58:749 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:58:58:753 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:58:58:754 [BaseDriver] Waited for 728 ms so far
+2019-06-04 23:58:59:258 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:58:59:265 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:58:59:266 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:58:59:268 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:58:59:268 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:58:59:303 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:58:59:305 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:58:59:343 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:58:59:344 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:58:59:346 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:58:59:347 [BaseDriver] Waited for 1321 ms so far
+2019-06-04 23:58:59:855 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:58:59:864 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:58:59:874 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:58:59:879 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:58:59:882 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:58:59:930 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:58:59:931 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:58:59:984 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:58:59:985 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:58:59:986 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:58:59:988 [BaseDriver] Waited for 1961 ms so far
+2019-06-04 23:59:00:491 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:00:497 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:00:498 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:00:499 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:00:512 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:00:537 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:00:540 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:00:618 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:00:620 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:00:621 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:00:623 [BaseDriver] Waited for 2596 ms so far
+2019-06-04 23:59:01:125 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:01:129 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:01:131 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:01:131 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:01:136 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:01:157 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:01:160 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:01:202 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:01:203 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:01:204 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:01:206 [BaseDriver] Waited for 3178 ms so far
+2019-06-04 23:59:01:708 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:01:713 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:01:714 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:01:715 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:01:716 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:01:741 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:01:743 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:01:781 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:01:781 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:01:783 [BaseDriver] Waited for 3757 ms so far
+2019-06-04 23:59:01:784 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:02:291 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:02:297 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:02:298 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:02:299 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:02:299 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:02:326 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:02:327 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:02:362 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:02:363 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:02:365 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:02:366 [BaseDriver] Waited for 4339 ms so far
+2019-06-04 23:59:02:869 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:02:874 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:02:875 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:02:876 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:02:878 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:02:900 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:02:901 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:02:939 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:02:940 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:02:941 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:02:943 [BaseDriver] Waited for 4916 ms so far
+2019-06-04 23:59:03:443 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:03:450 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:03:453 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:03:457 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:03:459 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:03:479 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:03:480 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:03:520 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:03:521 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:03:522 [BaseDriver] Waited for 5495 ms so far
+2019-06-04 23:59:03:523 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:04:025 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:04:028 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:04:029 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:04:032 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:04:033 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:04:050 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:04:051 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:04:096 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:04:102 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:04:104 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:04:105 [BaseDriver] Waited for 6078 ms so far
+2019-06-04 23:59:04:607 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:04:617 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:04:618 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:04:619 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:04:620 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:04:630 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:04:633 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:04:676 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:04:677 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:04:678 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:04:679 [BaseDriver] Waited for 6652 ms so far
+2019-06-04 23:59:05:182 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:05:188 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:05:188 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:05:199 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:05:202 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:05:219 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:05:220 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:05:282 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:05:284 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:05:284 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:05:287 [BaseDriver] Waited for 7259 ms so far
+2019-06-04 23:59:05:792 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:05:796 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:05:797 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:05:798 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:05:799 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:05:814 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:05:818 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:05:846 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:05:848 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:05:849 [BaseDriver] Waited for 7822 ms so far
+2019-06-04 23:59:05:855 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:06:350 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:06:355 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:06:357 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:06:358 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:06:358 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:06:389 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:06:390 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:06:429 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:06:433 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:06:433 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:06:434 [BaseDriver] Waited for 8407 ms so far
+2019-06-04 23:59:06:936 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:06:942 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:06:943 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:06:944 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:06:946 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:06:977 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:06:981 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:07:019 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:07:020 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:07:021 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:07:021 [BaseDriver] Waited for 8995 ms so far
+2019-06-04 23:59:07:523 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:07:527 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:07:528 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:07:529 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:07:530 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:07:570 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:07:570 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:07:630 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:07:631 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:07:632 [BaseDriver] Waited for 9606 ms so far
+2019-06-04 23:59:07:633 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:08:134 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:08:138 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:08:139 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:08:139 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:08:140 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:08:170 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:08:171 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:08:228 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:08:228 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:08:229 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:08:230 [BaseDriver] Waited for 10203 ms so far
+2019-06-04 23:59:08:732 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:08:735 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:08:737 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:08:738 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:08:738 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:08:753 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:08:758 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:08:793 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:08:793 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:08:794 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:08:795 [BaseDriver] Waited for 10768 ms so far
+2019-06-04 23:59:09:297 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:09:304 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:09:305 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:09:305 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:09:307 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:09:318 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:09:319 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:09:378 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:09:379 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:09:379 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:09:380 [BaseDriver] Waited for 11354 ms so far
+2019-06-04 23:59:09:882 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:09:886 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:09:887 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:09:887 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:09:887 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:09:918 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:09:923 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:09:947 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:09:948 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:09:949 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:09:950 [BaseDriver] Waited for 11924 ms so far
+2019-06-04 23:59:10:453 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:10:470 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:10:475 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:10:479 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:10:482 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:10:490 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:10:491 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:10:532 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:10:533 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:10:533 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:10:534 [BaseDriver] Waited for 12508 ms so far
+2019-06-04 23:59:11:036 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:11:042 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:11:042 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:11:043 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:11:043 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:11:073 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:11:078 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:11:110 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:11:110 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:11:111 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:11:112 [BaseDriver] Waited for 13085 ms so far
+2019-06-04 23:59:11:614 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:11:616 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:11:617 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:11:617 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:11:618 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:11:641 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:11:641 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:11:701 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:11:701 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:11:702 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:11:703 [BaseDriver] Waited for 13676 ms so far
+2019-06-04 23:59:12:205 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:12:208 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:12:208 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:12:209 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:12:209 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:12:235 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:12:236 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:12:278 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:12:278 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:12:278 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:12:279 [BaseDriver] Waited for 14253 ms so far
+2019-06-04 23:59:12:782 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:12:787 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:12:787 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:12:791 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:12:792 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:12:815 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:12:816 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:12:857 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:12:858 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:12:858 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:12:859 [BaseDriver] Waited for 14833 ms so far
+2019-06-04 23:59:13:361 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:13:365 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:13:366 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:13:366 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:13:367 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:13:410 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:13:411 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:13:446 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:13:447 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:13:448 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:13:448 [BaseDriver] Waited for 15422 ms so far
+2019-06-04 23:59:13:951 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:13:955 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:13:956 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:13:956 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:13:957 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:13:990 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:13:990 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:14:028 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:14:029 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:14:029 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:14:030 [BaseDriver] Waited for 16004 ms so far
+2019-06-04 23:59:14:531 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:14:534 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:14:535 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:14:535 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:14:535 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:14:582 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:14:582 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:14:632 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:14:633 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:14:634 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:14:635 [BaseDriver] Waited for 16608 ms so far
+2019-06-04 23:59:15:135 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:15:139 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:15:140 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:15:140 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:15:143 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:15:168 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:15:168 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:15:214 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:15:215 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:15:215 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:15:216 [BaseDriver] Waited for 17190 ms so far
+2019-06-04 23:59:15:719 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:15:724 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:15:724 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:15:725 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:15:725 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:15:741 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:15:742 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:15:786 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:15:786 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:15:787 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:15:789 [BaseDriver] Waited for 17762 ms so far
+2019-06-04 23:59:16:290 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:16:294 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:16:294 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:16:295 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:16:295 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:16:317 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:16:317 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:16:350 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:16:350 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:16:352 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:16:353 [BaseDriver] Waited for 18326 ms so far
+2019-06-04 23:59:16:856 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:16:860 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:16:862 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:16:863 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:16:864 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:16:921 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:16:922 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:16:982 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:16:993 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:16:993 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:16:994 [BaseDriver] Waited for 18968 ms so far
+2019-06-04 23:59:17:496 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:17:499 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:17:500 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:17:500 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:17:501 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:17:521 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:17:523 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:17:571 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:17:578 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:17:579 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:17:580 [BaseDriver] Waited for 19553 ms so far
+2019-06-04 23:59:18:081 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:18:085 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:18:085 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:18:086 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:18:086 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:18:116 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:18:118 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:18:176 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:18:178 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:18:179 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:18:179 [BaseDriver] Waited for 20153 ms so far
+2019-06-04 23:59:18:682 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:18:687 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:18:688 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:18:689 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:18:690 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:18:728 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:18:729 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:18:771 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:18:772 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:18:772 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:18:773 [BaseDriver] Waited for 20747 ms so far
+2019-06-04 23:59:19:276 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:19:279 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:19:281 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:19:281 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:19:282 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:19:309 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:19:310 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:19:340 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:19:340 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:19:341 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:19:342 [BaseDriver] Waited for 21315 ms so far
+2019-06-04 23:59:19:845 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:19:857 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:19:859 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:19:862 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:19:868 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:19:912 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:19:913 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:19:957 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:19:957 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:19:958 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:19:959 [BaseDriver] Waited for 21932 ms so far
+2019-06-04 23:59:20:463 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:20:478 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:20:479 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:20:479 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:20:480 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:20:513 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:20:514 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:20:565 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:20:567 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:20:568 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:20:569 [BaseDriver] Waited for 22542 ms so far
+2019-06-04 23:59:21:071 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:21:076 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:21:078 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:21:078 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:21:079 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:21:108 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:21:114 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:21:161 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:21:161 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:21:162 [BaseDriver] Waited for 23135 ms so far
+2019-06-04 23:59:21:162 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:21:664 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:21:667 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:21:667 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:21:668 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:21:668 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:21:698 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:21:699 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:21:741 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:21:742 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:21:743 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:21:743 [BaseDriver] Waited for 23717 ms so far
+2019-06-04 23:59:22:246 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:22:254 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:22:258 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:22:259 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:22:260 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:22:324 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:22:326 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:22:402 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:22:408 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:22:409 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:22:410 [BaseDriver] Waited for 24384 ms so far
+2019-06-04 23:59:22:911 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:22:915 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:22:916 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:22:916 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:22:917 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:22:936 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:22:941 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:22:987 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:22:989 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:22:989 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:22:990 [BaseDriver] Waited for 24964 ms so far
+2019-06-04 23:59:23:493 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:23:501 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:23:503 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:23:503 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:23:504 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:23:552 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:23:552 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:23:599 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:23:600 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:23:602 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:23:603 [BaseDriver] Waited for 25577 ms so far
+2019-06-04 23:59:24:106 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:24:109 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:24:110 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:24:110 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:24:111 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:24:127 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:24:127 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:24:160 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:24:161 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:24:161 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:24:162 [BaseDriver] Waited for 26136 ms so far
+2019-06-04 23:59:24:671 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:24:676 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:24:677 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:24:678 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:24:680 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:24:725 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:24:726 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:24:772 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:24:773 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:24:773 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:24:774 [BaseDriver] Waited for 26748 ms so far
+2019-06-04 23:59:25:277 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:25:281 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:25:282 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:25:282 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:25:282 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:25:311 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:25:311 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:25:341 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:25:341 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:25:341 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:25:342 [BaseDriver] Waited for 27316 ms so far
+2019-06-04 23:59:25:844 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:25:848 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:25:848 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:25:849 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:25:849 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:25:876 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:25:877 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:25:917 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:25:917 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:25:917 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:25:918 [BaseDriver] Waited for 27891 ms so far
+2019-06-04 23:59:26:421 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:26:424 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:26:425 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:26:425 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:26:426 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:26:449 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:26:453 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:26:506 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:26:506 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:26:507 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:26:508 [BaseDriver] Waited for 28481 ms so far
+2019-06-04 23:59:27:010 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:27:014 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:27:015 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:27:015 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:27:016 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:27:031 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:27:032 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:27:071 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:27:072 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:27:073 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:27:073 [BaseDriver] Waited for 29047 ms so far
+2019-06-04 23:59:27:576 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:27:582 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:27:583 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:27:583 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:27:584 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:27:610 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:27:611 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:27:641 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:27:641 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:27:642 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:27:642 [BaseDriver] Waited for 29616 ms so far
+2019-06-04 23:59:28:143 [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:28:147 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view","context":"","multiple":false}}
+2019-06-04 23:59:28:147 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2019-06-04 23:59:28:149 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2019-06-04 23:59:28:149 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:28:170 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2019-06-04 23:59:28:178 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '/html/body/wx-view/wx-view[1]/wx-view/wx-view[2]/wx-view/wx-view/wx-view[4]/wx-view/wx-view' using 'XPATH' with the contextId: '' multiple: false
+2019-06-04 23:59:28:218 [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2019-06-04 23:59:28:218 [AndroidBootstrap] Received command result from bootstrap
+2019-06-04 23:59:28:219 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-06-04 23:59:28:221 [W3C (1c2fea28)] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+2019-06-04 23:59:28:222 [W3C (1c2fea28)]     at AndroidDriver.helpers.findElOrEls (E:\npm\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:75:11)
+2019-06-04 23:59:28:223 [W3C (1c2fea28)]     at <anonymous>
+2019-06-04 23:59:28:224 [HTTP] <-- POST /wd/hub/session/1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd/element 404 30203 ms - 403
+2019-06-04 23:59:28:225 [HTTP] 
+2019-06-05 00:07:18:247 [Logcat] Logcat terminated with code 0, signal null
+2019-06-05 00:07:18:254 [UiAutomator] UiAutomator exited unexpectedly with code 0, signal null
+2019-06-05 00:07:18:255 [UiAutomator] Moving to state 'stopped'
+2019-06-05 00:07:18:262 [AndroidDriver] Shutting down Android driver
+2019-06-05 00:07:18:263 [ADB] Running 'E:\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 127.0.0.1\:7555 shell am force-stop com.tencent.mobileqq'
+2019-06-05 00:07:18:272 [Appium] Closing session, cause was 'UiAUtomator shut down unexpectedly'
+2019-06-05 00:07:18:272 [Appium] Removing session 1c2fea28-a96b-4915-ac1e-3ab0dc3b3bfd from our master session list

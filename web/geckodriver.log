@@ -1,0 +1,151 @@
+1558970882259	mozrunner::runner	INFO	Running command: "E:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\leez\\AppData\\Local\\Temp\\rust_mozprofile.Z9nq5W5YUzu1"
+1558970884362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558970884362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558970884362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558970886977	Marionette	INFO	Listening on port 51220
+1558970887094	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://112.74.191.10:8000/public/static/js/common.js, line 403: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/index.php?m=Admin&c=Goods&a=goodsList, line 71: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/public/static/js/common.js, line 403: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/index.php/Admin/goods/addEditGoods, line 71: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/public/js/jquery-1.10.2.min.js, line 19: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Parent 6256, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 2680, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 2680, Chrome_ChildThread] WARNING: pipe error: 1[Child 17492, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 17492, Chrome_ChildThread] W1558970964395	Marionette	INFO	Stopped listening on port 51220
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1558970988943	mozrunner::runner	INFO	Running command: "E:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\leez\\AppData\\Local\\Temp\\rust_mozprofile.3EPjyZYBy2iq"
+1558970989353	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558970989353	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558970989353	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558970990762	Marionette	INFO	Listening on port 51945
+1558970991066	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://112.74.191.10:8000/public/static/js/common.js, line 403: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/index.php?m=Admin&c=Goods&a=goodsList, line 71: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/public/static/js/common.js, line 403: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/index.php/Admin/goods/addEditGoods, line 71: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/public/js/jquery-1.10.2.min.js, line 19: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Child 16004, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 16004, Chrome_ChildThread] WARNING: pipe erro1558971078981	Marionette	INFO	Stopped listening on port 51945
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1558971866767	mozrunner::runner	INFO	Running command: "E:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\leez\\AppData\\Local\\Temp\\rust_mozprofile.pXOhaBmYGsi6"
+1558971868015	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558971868015	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558971868015	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558971869443	Marionette	INFO	Listening on port 52105
+1558971869513	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://112.74.191.10:8000/public/static/js/common.js, line 403: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/index.php?m=Admin&c=Goods&a=goodsList, line 71: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/public/static/js/common.js, line 403: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/index.php/Admin/goods/addEditGoods, line 71: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+JavaScript warning: http://112.74.191.10:8000/public/js/jquery-1.10.2.min.js, line 19: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[Child 7732, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/s[Chilrdc /1chrome/common/ip4c5_1c2, Chrome_ChildThread] WARNING: pipe error: 109: file z:/buildhan/nbeuli_lwd/src/ipc/chromium/src/chrome/common/ipci_channel_winn..cc, licnc, line 332
+e 332
+[Child 14512, Chrome[Child 7732, Chr[Parent 1848, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+1558972476264	Marionette	INFO	Stopped listening on port 52105
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1558972480968	mozrunner::runner	INFO	Running command: "E:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\leez\\AppData\\Local\\Temp\\rust_mozprofile.c1c1g9ME2h1p"
+1558972482020	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558972482021	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558972482021	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558972483460	Marionette	INFO	Listening on port 56825
+1558972483708	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://112.74.191.10:8000/public/static/js/common.js, line 403: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/index.php?m=Admin&c=Goods&a=goodsList, line 71: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/public/static/js/common.js, line 403: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/index.php/Admin/goods/addEditGoods, line 71: unreachable code after return statement
+JavaScript warning: http://112.74.191.10:8000/public/js/jquery-1.10.2.min.js, line 19: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 11204, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 19068, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 19068, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 11204, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+1558972650614	Marionette	INFO	Stopped listening on port 56825
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

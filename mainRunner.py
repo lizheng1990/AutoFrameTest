@@ -1,6 +1,7 @@
 # coding:utf8
 import inspect
 
+from app.appkeywordbyexcel import APP
 from common.Excel import *
 from common import config
 from common.excelresult import Res
@@ -8,10 +9,11 @@ from common.mail import Mail
 from common.mysql import Mysql
 from inter.httpkeywordbyexcel import HTTP
 from inter.soapkeywordbyexcel import SOAP
+from web.webkeywordbyexcel import WEB
 
 
 def runCases(line,type):
-    if len(line[0]) > 0 or len(line[1]) > 0:
+    if len(line[0]) > 0 or len(line[1]) > 0 or len(line[2]) == 0:
         pass
     else:
         func = getattr(type, line[3])
@@ -36,20 +38,25 @@ if __name__ == "__main__":
     res = Res()
     reader = Reader()
     writer = Writer()
-    key = 'REST'
+    key = 'APP'
     if key == 'HTTP':
-        http = HTTP(writer)
-        type = http
-    if key == 'SOAP':
-        soap = SOAP(writer)
-        type = soap
-    if key == 'REST':
-        http = HTTP(writer)
-        type = http
-    start_time = time.time()
+        runType = HTTP(writer)
+        name = 'HTTP接口'
+    elif key == 'SOAP':
+        runType = SOAP(writer)
+        name = 'SOAP接口'
+    elif key == 'REST':
+        runType = HTTP(writer)
+        name = 'REST接口'
+    elif key == 'WEB':
+        runType = WEB(writer)
+        name = 'WEB'
+    elif key == 'APP':
+        runType = APP(writer)
+        name = 'APP'
     ctime = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
-    case = './lib/cases/' + key + '接口用例'
-    result = './lib/results/result-' + key + '接口用例'
+    case = './lib/cases/' + name + '用例'
+    result = './lib/results/result-' + name + '用例'
     reader.open_excel(case + '.xls')
     writer.copy_open(case + '.xls', result + ctime +'.xls')
     sheetname = reader.get_sheets()
@@ -64,7 +71,7 @@ if __name__ == "__main__":
             writer.row = i
             writer.clo = 7
             line = reader.readline()
-            runCases(line,type)
+            runCases(line, runType)
     end_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
     writer.set_sheet(sheetname[0])
     writer.write(1,4,str(end_time))
@@ -78,8 +85,8 @@ if __name__ == "__main__":
 
     mail = Mail()
     mail.mail_info['mail_subject'] = r['title'] + '_' + ctime
-    mail.mail_info['filepaths'] = ['./lib/results/result-HTTP接口用例' + ctime +'.xls']
-    mail.mail_info['filenames'] = ['result-HTTP接口用例' + ctime +'.xls']
+    mail.mail_info['filepaths'] = [result + ctime +'.xls']
+    mail.mail_info['filenames'] = ['result-' + name + '用例' + ctime +'.xls']
     config.config['mail_html'] = config.config['mail_html'].replace('title',r['title'])
     if r['status'] == 'Fail':
         config.config['mail_html'] = config.config['mail_html'].replace('color: #00d800;">status','color: #FF0000;">status')
